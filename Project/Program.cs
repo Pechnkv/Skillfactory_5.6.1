@@ -70,7 +70,6 @@ namespace Project
 
         }
 
-
         static (string Name, string Surname, uint Age, uint NumberOfPet, string[] NameOfPet, string[] FavColor) EnterUser()
         {
             (string Name, string Surname, uint Age, uint NumberOfPet, string[] NameOfPet, string[] FavColor) User;

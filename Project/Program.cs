@@ -10,63 +10,8 @@ namespace Project
     {
         static void Main(string[] args)
         {
-
-
             ShowUser();
-
-
-
-
-
-
-
-            {
-                //    (string Name, string Surname, uint Age,
-                //    string[] NameOfPet, string[] FavColor) User;
-
-
-                //    //ввод имени
-                //    User.Name = GetInput("Введите ваше имя");
-
-                //    //ввод фамилии
-                //    User.Surname = GetInput("Введите вашу фамилию");
-
-                //    // ввод возраста
-                //    string inputAge = GetInput("Введите ваш возраст");
-
-                //    User.Age = InputNumber(inputAge);
-
-                //    //ввод данных о питомце
-                //    string pet = GetInput("Есть ли у вас животные");
-                //    uint numberOfPet = pet == "Да" ? InputNumber(GetInput("Сколько у вас питомцев")) : 0;
-                //    User.NameOfPet = HasPet(ref numberOfPet);
-
-                //    //ввод любимых цветов
-                //    uint NumberOfColor = InputNumber(GetInput("Сколько у вас любимых цветов: "));
-                //    User.FavColor = FavColor(ref NumberOfColor);
-
-                //    Console.Clear();
-
-
-                //    Console.WriteLine($"Ваше имя: {User.Name}");
-                //    Console.WriteLine($"Ваша фамилия:  {User.Surname}");
-                //    Console.WriteLine($"Ваш возраст: {User.Age}");
-
-                //    if (pet == "Да")
-                //    {
-                //        Console.WriteLine($"У вас питомцев: {numberOfPet}, и зовут их:");
-                //        ShowArray(ref User.NameOfPet);
-                //    }
-                //    else
-                //    {
-                //        Console.WriteLine("Жаль что у вас нет живности((");
-                //    }
-
-                //    Console.WriteLine($"Количество ваших любимых цветов: {NumberOfColor}. \nИ вам нравятся такие цвета как:   ");
-                //    ShowArray(ref User.FavColor);
-            }
-
-
+            Console.ReadKey
 
         }
 
@@ -95,11 +40,6 @@ namespace Project
 
             User.NameOfPet = HasPet(ref User.NumberOfPet);
             Console.WriteLine(User.NumberOfPet);
-
-
-            //uint numberOfPet = pet == "Да" ? InputNumber(GetInput("Сколько у вас питомцев")) : 0;
-            //User.NumberOfPet = numberOfPet;
-            //User.NameOfPet = HasPet(ref User.NumberOfPet);
 
             //ввод любимых цветов
             uint NumberOfColor = InputNumber(GetInput("Сколько у вас любимых цветов: "));

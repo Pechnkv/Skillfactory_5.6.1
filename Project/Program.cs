@@ -11,7 +11,7 @@ namespace Project
         static void Main(string[] args)
         {
             ShowUser();
-            Console.ReadKey
+            Console.ReadKey();
 
         }
 
@@ -39,7 +39,6 @@ namespace Project
             }
 
             User.NameOfPet = HasPet(ref User.NumberOfPet);
-            Console.WriteLine(User.NumberOfPet);
 
             //ввод любимых цветов
             uint NumberOfColor = InputNumber(GetInput("Сколько у вас любимых цветов: "));
@@ -53,17 +52,25 @@ namespace Project
         static void ShowUser()
         {
             var User = EnterUser();
+            Console.Clear();
             Console.WriteLine($"Ваше имя: {User.Name}");
             Console.WriteLine($"Ваша фамилия:  {User.Surname}");
             Console.WriteLine($"Ваш возраст: {User.Age}");
 
-            Console.WriteLine($"Ваши питомцы:");
-            ShowArray(ref User.NameOfPet);
+            if (User.NumberOfPet == 0)
+            {
+                Console.WriteLine("Жаль, что у вас нет питомцев(");
+            }
+            else if (User.NumberOfPet > 0)
+            {
+                Console.WriteLine($"Ваши питомцы:");
+                ShowArray(ref User.NameOfPet);
+            }
 
 
             Console.WriteLine($"Количество ваших любимых цветов:");
             ShowArray(ref User.FavColor);
-
+            Console.ReadLine();
 
         }
 

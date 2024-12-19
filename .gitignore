@@ -365,10 +365,14 @@ FodyWeavers.xsd
 
 # Скрытие папок
 
+
+*.sin
 Project/*
 !Project/Program.cs
 
 
-calc.sln
+
+*.sin
 *.csproj
 .gitattributes
+.gitignore
